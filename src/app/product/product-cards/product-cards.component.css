@@ -1,0 +1,37 @@
+.cards {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: calc(20%-10px);
+    box-sizing: border-box;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* spacing between cards */
+}
+
+.cards img {
+    width: 100px;
+
+    /* image won’t exceed card width */
+    height: 80px;
+    /* keep original aspect ratio */
+    display: block;
+    /* removes small gaps under image */
+    margin: 0 auto 10px;
+    /* center image, optional bottom margin */
+    border-radius: 4px;
+    /* optional rounded corners */
+}
+
+.cards h3 {
+    max-width: 120px;
+}
+
+.cart button {
+    padding: 5px 10px;
+}

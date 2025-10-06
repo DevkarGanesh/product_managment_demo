@@ -1,0 +1,13 @@
+<div>
+    <h2 (click)="goToCart()">Go to cart</h2>
+</div>
+
+<div class="main-div">
+    <div class="cards" *ngFor="let product of productList">
+        <img src="{{product.image}}" />
+        <h3>{{product?.title}}</h3>
+        <h5>Average rating {{product?.rating?.rate}} by {{product?.rating?.count}} customers</h5>
+        <p>Price {{product?.price}}</p>
+        <button type="button" (click)="addToCart(product)">Add to cart</button>
+    </div>
+</div>
